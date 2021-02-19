@@ -13,22 +13,23 @@ export default class TasksController {
 
     addTask(event, listId) {
         event.preventDefault()
+        if (event.target.title.value == "") {
+            window.alert("Cannot have an empty task.")
+        } else {
         let rawTask = {
             title: event.target.title.value,
             textColor: event.target.textColor.value,
             listId: listId
         }
         tasksService.addTask(rawTask)
-        ListsController.checkCompleted(listId)
+        }
     }
 
     deleteTask(taskId, listId) {
         window.confirm("Are you sure you want to delete this?") ? tasksService.deleteTask(taskId) : window.alert("Did not delete task.")
-        ListsController.checkCompleted(listId)
     }
 
     toggleComplete(taskId, listId) {
         tasksService.toggleComplete(taskId)
-        ListsController.checkCompleted(listId)
     }
 }

@@ -19,6 +19,5 @@ export function loadState() {
         ProxyState.tasks = data.tasks.map(storedTasks=> new Task(storedTasks))
         ProxyState.lists = data.lists.map(storedLists => new List(storedLists))
     }
-    ProxyState.lists.forEach(l => ListsController.checkCompleted(l.id)) 
     console.log("Loaded Lists & Tasks")
 }

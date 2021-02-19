@@ -1,7 +1,7 @@
 import { generateId } from "../Utils/GenerateId.js";
 
 export default class Task {
-    constructor({ title, textColor = "#e6e6e6", id = generateId(), listId, isComplete = true })
+    constructor({ title, textColor = "#e6e6e6", id = generateId(), listId, isComplete = false })
     {
         this.title = title
         this.textColor = textColor

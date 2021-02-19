@@ -9,12 +9,13 @@ function _draw() {
     let template = ""
     ProxyState.lists.forEach(l => template += l.Template)
     document.getElementById("lists").innerHTML = template
+    listsService.checkCompleted()
 }
 
 export default class ListsController {
 
-    static checkCompleted(id) {
-        listsService.checkCompleted(id)
+    checkCompleted() {
+        listsService.checkCompleted()
     }
 
     constructor() {
