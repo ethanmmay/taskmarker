@@ -1,4 +1,4 @@
-import { generateId } from "../Utils/GenerateId.js";
+import { generateId } from "../Utils/generateId.js";
 
 export default class Task {
     constructor({ title, textColor = "#e6e6e6", id = generateId(), listId, isComplete = false })
