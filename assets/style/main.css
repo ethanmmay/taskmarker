@@ -10,4 +10,19 @@ button {
 
 main {
   height: 88.6vh;
+  background-color: #66a2ba;
+}
+
+body {
+  background-color: #343a40;
+}
+
+.title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #66a2ba;
+}
+
+.title-image {
+  max-width: 60px;
+  border-radius: 5px;
 }
