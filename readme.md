@@ -1,5 +1,7 @@
-taskmaster
+taskmarker
 ============
+
+# A website for creating lists of your tasks that can be organized and personalized 
 
 ### Get Started
 
